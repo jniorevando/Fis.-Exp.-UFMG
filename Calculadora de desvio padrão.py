@@ -26,6 +26,6 @@ for i in g:
     
 Dp = (d/(n-1))**(1/2)
 
-print("Valor médio:", x1)
-print("Desvio padrão:", Dp)
+print('Valor médio:{:.3f}'.format(x1))
+print('Desvio padrão:{:.3f}'.format(Dp))
     
