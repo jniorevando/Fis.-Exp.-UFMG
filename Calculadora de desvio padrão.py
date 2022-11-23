@@ -25,7 +25,9 @@ for i in g:
     d += i
     
 Dp = (d/(n-1))**(1/2)
+I = (Dp/x1)*100
 
 print('Valor médio:{:.3f}'.format(x1))
 print('Desvio padrão:{:.3f}'.format(Dp))
+print('A medida tem uma incerteza de:{:.2f}'.format(I),"%") 
     
