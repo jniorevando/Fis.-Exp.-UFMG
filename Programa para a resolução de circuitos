@@ -1,0 +1,10 @@
+import numpy as np
+
+R = np.array([[0.68,0.68,0.],[0.,-0.68,1.],[1.,-1.,-1.]])
+epsilon = np.array([6.10,3.04,0.])
+I = np.matmul(np.linalg.inv(R),epsilon)
+I_trun = np.trunc(I * 1000) / 1000
+print('As correntes encontradas são:')
+print('I_1 =', I_trun[0],'+- 0.009 mA')
+print('I_2 =', I_trun[1],'+- 0.009 mA')
+print('I_3 =', I_trun[2],'+- 0.009 mA')
